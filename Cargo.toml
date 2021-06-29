@@ -1,0 +1,19 @@
+[package]
+name = "mpfoer"
+version = "0.1.0"
+authors = ["Shamir Khodzha <khodzha.sh@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = "0.11.4"
+anyhow = "1"
+rand = "0.8.4"
+base64 = "0.13.0"
+
+[dependencies.serenity]
+default-features = false
+features = ["builder", "cache", "client", "gateway", "http", "model", "utils", "rustls_backend", ]
+version = "0.10"
